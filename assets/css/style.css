@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary-font: "Science Gothic", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --primary-font-size: 2rem;
+  --primary-font-weight: 800;
+  --primary-font-size-h2: 2rem;
+  --primary-font-weight-h2: 600;
+  --secondary-font-size: 1rem;
+  --secondary-font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--secondary-font);
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#tsparticles {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size-h2);
+  font-weight: var(--primary-font-weight-h2);
+}
+
+nav a {
+  font-family: var(--secondary-font);
+  font-weight: var(--primary-font-weight-h2);
+}
+
+.myname {
+  font-family: var(--primary-font);
+}
+
+.ctabtn:hover {
+  cursor: pointer;
+}
+
+.swiper {
+  width: 350px;
+  height: 350px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.aboutme {
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+}
+
+.aboutme .right-div p{
+  line-height: 2;
+}
