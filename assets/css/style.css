@@ -7,7 +7,7 @@
   --secondary-font: "Montserrat", sans-serif;
   --primary-font-size: 2rem;
   --primary-font-weight: 800;
-  --primary-font-size-h2: 2rem;
+  --primary-font-size-h2: 3rem;
   --primary-font-weight-h2: 600;
   --secondary-font-size: 1rem;
   --secondary-font-weight: 400;
@@ -62,6 +62,13 @@ nav a {
 
 .ctabtn:hover {
   cursor: pointer;
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .swiper {
@@ -84,6 +91,23 @@ nav a {
   align-items: center;
 }
 
-.aboutme .right-div p{
+.aboutme .left-div {
+  width: 40%;
+}
+
+.aboutme .right-div {
+  width: 50%;
+}
+
+.aboutme .right-div p {
   line-height: 2;
+}
+
+.service-card {
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.service-card .ctabtn{
+  justify-self: end;
 }
