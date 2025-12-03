@@ -28,6 +28,7 @@ body {
 section {
   height: 100vh;
   scroll-snap-align: start;
+  padding:3%;
 }
 
 #tsparticles {
@@ -71,12 +72,12 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.swiper {
+.aboutme .swiper {
   width: 350px;
   height: 350px;
 }
 
-.swiper-slide {
+.aboutme .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,11 +104,75 @@ nav a {
   line-height: 2;
 }
 
-.service-card {
-  height: 60%;
+.services{
+  height: 100% !important;
+  overflow: hidden;
+}
+
+.services .swiper-slide img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-cards {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.service-card .ctabtn{
+.serviceswiper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.serviceswiper img {
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.service-card {
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.service-card .ctabtn {
   justify-self: end;
+}
+
+.service-content {
+  height: 200px;
+}
+
+#tech-stack {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tech-stack .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tech-stack .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.tech-stack .swiper-slide img {
+  display: block;
+  width: 100%;
 }
