@@ -266,23 +266,23 @@ nav a {
 }
 
 .bg-code {
-  background-image: url("assets/images/code.jpg");
+  background-image: url("../images/hadnson.jpg");
 }
 
 .bg-instructor {
-  background-image: url("assets/images/instructor.jpg");
+  background-image: url("../images/instructor.jpg");
 }
 
 .bg-clean-code {
-  background-image: url("assets/images/clean-code.jpg");
+  background-image: url("../images/coding.jpg");
 }
 
 .bg-design {
-  background-image: url("assets/images/design.jpg");
+  background-image: url("../images/simple.jpg");
 }
 
 .bg-design-alt {
-  background-image: url("assets/images/design-alt.jpg");
+  background-image: url("../images/growth.jpg");
 }
 
 /* Responsive */
