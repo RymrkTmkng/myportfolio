@@ -406,6 +406,11 @@ nav a {
 
   .aboutme {
     flex-direction: column;
+    height: auto;
+  }
+
+  .aboutme .ctabtn{
+    width: 100%;
   }
 
   .aboutme .swiper {
