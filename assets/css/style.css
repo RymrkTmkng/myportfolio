@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-font: "Science Gothic", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
@@ -72,9 +76,15 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.aboutme .ctabtn {
+  border: 1px solid white;
+  padding: 1rem;
+}
+
 .aboutme .swiper {
   width: 350px;
   height: 350px;
+  border-radius: 100%;
 }
 
 .aboutme .swiper-slide {
@@ -139,7 +149,8 @@ nav a {
   object-position: top;
 }
 
-.service-card {
+.service-card,
+.project-cards {
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -152,7 +163,8 @@ nav a {
   height: 200px;
 }
 
-#tech-stack {
+#tech-stack,
+#why-work-with-me {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -245,11 +257,18 @@ nav a {
 .bento-content {
   position: relative;
   z-index: 2;
+  font-size: 1.5rem;
 }
 
 /* Variants */
 .bento.wide {
   grid-column: span 2;
+}
+
+.max {
+  grid-column: span 4;
+  opacity: 1;
+  z-index: 999;
 }
 
 .bento.tall {
@@ -285,19 +304,6 @@ nav a {
   background-image: url("../images/growth.jpg");
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Optional hover effect */
 .bento:hover::before {
   background: rgba(0, 0, 0, 0.4);
@@ -305,17 +311,122 @@ nav a {
 }
 
 .gmail-button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: white; /* Gmail red */
-      color: black;
-      text-decoration: none;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white; /* Gmail red */
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
 
-    .gmail-button:hover {
-      background-color: white;
-    }
+.gmail-button:hover,
+.key-feature-viewbtn:hover {
+  opacity: 0.5;
+}
+
+.key-features {
+  text-align: start;
+  list-style-type: disc;
+  height: 200px;
+}
+
+.key-features span {
+  font-weight: 600;
+}
+
+.key-features li {
+  margin-left: 2rem;
+}
+
+.key-feature-viewbtn {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.project-cards {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #navbar-default ul {
+    background-color: black;
+  }
+
+  #navbar-default ul li {
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 2rem 2rem;
+    text-align: start;
+  }
+
+  #my-projects {
+    height: auto;
+  }
+
+  #tech-stack {
+    overflow: hidden;
+  }
+
+  #my-projects h2,
+  #tech-stack h2 {
+    font-size: 2rem;
+  }
+  #why-work-with-me h2 {
+    font-size: 1.7rem;
+  }
+
+  #my-projects p,
+  #tech-stack p,
+  #why-work-with-me p {
+    font-size: 1rem;
+  }
+
+  #why-work-with-me {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
+  }
+
+  .bento-grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .aboutme .swiper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .aboutme .right-div {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .aboutme .right-div h2 {
+    text-align: center;
+  }
+
+  .aboutme .right-div span {
+    padding: 0;
+  }
+
+  .aboutme .left-div {
+    width: 100%;
+  }
+}

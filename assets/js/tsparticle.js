@@ -79,6 +79,7 @@ tsParticles.load("tsparticles", {
   retina_detect: true
 });
 var stats = new Stats();
+
 stats.setMode(0);
 stats.domElement.style.position = "absolute";
 stats.domElement.style.left = "0px";
